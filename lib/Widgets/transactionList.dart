@@ -45,7 +45,7 @@ class TransactionList extends StatelessWidget {
                           subtitle: Text(
                               DateFormat().add_MMMMEEEEd().format(e.dateTime)),
                           trailing: Text(
-                            "\u{20B9}${e.amount}",
+                            "\u{20B9}${e.amount.toStringAsFixed(2)}",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
